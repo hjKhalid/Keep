@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Fab from '@mui/material/Fab';
-import Zoom from '@mui/material/Zoom';
+
 
 import AddCommentIcon from '@mui/icons-material/AddComment';
 
@@ -37,6 +37,7 @@ function CreateArea(props) {
     return setExpand(true);
   }
   return (
+  <>
     <div>
       <form className="create-note">
      <input  name="title" onChange={handleChange} value={note.title} placeholder="Title" />
@@ -44,6 +45,7 @@ function CreateArea(props) {
         <Fab onClick={submitNote}><AddCommentIcon/></Fab>
       </form>
     </div>
+    </>
   );
 }
 

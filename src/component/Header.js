@@ -5,9 +5,11 @@ import HighlightIcon from '@mui/icons-material/Highlight';
 
 const Header = () => {
   return (
-   <header>
-    <h1><HighlightIcon/>Keep</h1>
-   </header>
+  <>
+    <header>
+      <h1><HighlightIcon />Keep</h1>
+    </header>
+  </>
   )
 }
 

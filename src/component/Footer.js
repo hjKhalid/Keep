@@ -4,7 +4,7 @@ const date= new Date().getFullYear();
 
 
 const Footer = () => {
-  return (
+  return (<>
     <div className='footer'>
   <footer>
     <p>
@@ -18,6 +18,7 @@ const Footer = () => {
       
   </footer> 
   </div>
+  </>
   )
   
 }

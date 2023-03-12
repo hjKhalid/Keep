@@ -22,6 +22,7 @@ function App() {
   }
 
   return (
+  <>
     <div>
       <Header />
       <CreateArea onAdd={addNote} />
@@ -38,6 +39,7 @@ function App() {
       })}
       <Footer />
     </div>
+  </>
   );
 }
 

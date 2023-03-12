@@ -6,12 +6,13 @@ function Note(props) {
     props.onDelete(props.id);
   }
 
-  return (
+  return (<>
     <div className="note">
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <Fab onClick={handleClick}><DeleteIcon/></Fab>
+      <Fab onClick={handleClick}><DeleteIcon /></Fab>
     </div>
+  </>
   );
 }
 
