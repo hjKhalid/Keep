@@ -10,7 +10,7 @@ const Footer = () => {
     <p>
         Copyright @ {date}
         <div class="footer-padding"></div>
-  <div class="footer">
+  <div className="footer">
     <p>Made with ❤️ by Khalid Hussain</p>
   </div>
     </p>

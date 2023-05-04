@@ -32,16 +32,13 @@ function CreateArea(props) {
     event.preventDefault();
   }
   
-  function isExpand(){
-    
-    return setExpand(true);
-  }
+  
   return (
   <>
     <div>
       <form className="create-note">
      <input  name="title" onChange={handleChange} value={note.title} placeholder="Title" />
-        <textarea name="content" onClick={isExpand} onChange={handleChange} value={note.content} placeholder="Take a note..." rows={expand?3:1} />
+        <textarea name="content"  onChange={handleChange} value={note.content} placeholder="Take a note..." rows={expand?3:1} />
         <Fab onClick={submitNote}><AddCommentIcon/></Fab>
       </form>
     </div>
